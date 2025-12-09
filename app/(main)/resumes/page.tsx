@@ -70,27 +70,27 @@ export default async function ResumesPage() {
         </div>
 
         {/* Geometric Shapes */}
-        <div className="animate-spin-slow absolute top-20 right-10 hidden h-32 w-32 rounded-full border-2 border-white/20 sm:right-20 md:block" />
+        <div className="animate-spin-slow absolute top-20 right-10 hidden h-32 w-32 rounded-full border-2 border-white/20 sm:right-20 md:block -z-50" />
         <div
-          className="absolute bottom-20 left-10 hidden h-24 w-24 rotate-45 border-2 border-white/20 sm:left-20 md:block"
+          className="absolute bottom-20 left-10 hidden h-24 w-24 rotate-45 border-2 border-white/20 sm:left-20 md:block -z-50"
           style={{ animation: "spin 8s linear infinite reverse" }}
         />
         <div
-          className="absolute top-1/4 left-1/2 hidden h-16 w-16 border-2 border-white/10 md:block"
+          className="absolute top-1/4 left-1/2 hidden h-16 w-16 border-2 border-white/10 md:block -z-50"
           style={{ animation: "float 5s ease-in-out infinite" }}
         />
 
         {/* Pulsing Dots */}
         <div
-          className="absolute top-1/3 right-1/4 h-2 w-2 rounded-full bg-white"
+          className="absolute top-1/3 right-1/4 h-2 w-2 rounded-full bg-white -z-50"
           style={{ animation: "pulse 2s ease-in-out infinite" }}
         />
         <div
-          className="absolute bottom-1/3 left-1/2 h-2 w-2 rounded-full bg-white"
+          className="absolute bottom-1/3 left-1/2 h-2 w-2 rounded-full bg-white -z-50"
           style={{ animation: "pulse 2s ease-in-out infinite 0.5s" }}
         />
         <div
-          className="absolute top-21 left-[10%] h-2 w-2 rounded-full bg-white"
+          className="absolute top-21 left-[10%] h-2 w-2 rounded-full bg-white -z-50"
           style={{ animation: "pulse 2s ease-in-out infinite 1s" }}
         />
       </main>
