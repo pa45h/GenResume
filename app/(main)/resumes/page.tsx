@@ -36,7 +36,7 @@ export default async function ResumesPage() {
     <>
       {/* Animated Grid Background - Full Width */}
       <div
-        className="pointer-events-none fixed inset-0 -z-50 h-screen w-screen opacity-20"
+        className="pointer-events-none fixed inset-0 h-screen w-screen opacity-20"
         style={{
           backgroundImage: `
             linear-gradient(to right, white 1px, transparent 1px),
@@ -45,10 +45,11 @@ export default async function ResumesPage() {
           backgroundSize: "80px 80px",
           transform: `perspective(500px) rotateX(60deg) scale(2) translateY(-50%)`,
           transformOrigin: "center top",
+          zIndex: -50,
         }}
       />
 
-      <main className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-6 px-3 py-6">
+      <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-6 px-3 py-6">
         <div className="flex w-full flex-col items-center justify-between gap-3 rounded-lg border border-white/20 p-3 text-center shadow-md">
           <div className="space-y-1">
             <h1 className="text-3xl font-bold">Your Resumes ({totalCount})</h1>
