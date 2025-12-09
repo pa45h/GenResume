@@ -89,7 +89,7 @@ function MoreMenu({ resdumeId, reactToPrintFn }: MoreMenuProps) {
           <Button
             variant="outline"
             size="icon"
-            className="absolute top-1 left-1 opacity-0 transition-opacity duration-300 group-hover:opacity-100 hover:cursor-pointer"
+            className="absolute top-1 left-1 duration-300 hover:cursor-pointer"
           >
             <MoreVertical className="size-5" />
           </Button>
