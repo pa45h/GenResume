@@ -117,7 +117,7 @@ Return only the enhanced professional summary text.`;
   console.log("Enhance Prompt---", prompt);
 
   const aiResponse = await ai.models.generateContent({
-    model: "gemini-2.0-flash-lite",
+    model: "gemini-2.5-flash-lite",
     contents: prompt,
   });
 
