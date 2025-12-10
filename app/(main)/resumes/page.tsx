@@ -36,7 +36,7 @@ export default async function ResumesPage() {
     <>
       {/* Animated Grid Background - Full Width */}
       <div
-        className="pointer-events-none fixed inset-0 h-screen w-screen opacity-20"
+        className="pointer-events-none fixed inset-0 hidden h-screen w-screen opacity-20 sm:block"
         style={{
           backgroundImage: `
             linear-gradient(to right, white 1px, transparent 1px),
@@ -71,27 +71,27 @@ export default async function ResumesPage() {
         </div>
 
         {/* Geometric Shapes */}
-        <div className="animate-spin-slow absolute top-20 right-10 hidden h-32 w-32 rounded-full border-2 border-white/20 sm:right-20 md:block -z-50" />
+        <div className="animate-spin-slow absolute top-20 right-10 -z-50 hidden h-32 w-32 rounded-full border-2 border-white/20 sm:right-20 sm:block md:block" />
         <div
-          className="absolute bottom-20 left-10 hidden h-24 w-24 rotate-45 border-2 border-white/20 sm:left-20 md:block -z-50"
+          className="absolute bottom-20 left-10 -z-50 hidden h-24 w-24 rotate-45 border-2 border-white/20 sm:left-20 sm:block md:block"
           style={{ animation: "spin 8s linear infinite reverse" }}
         />
         <div
-          className="absolute top-1/4 left-1/2 hidden h-16 w-16 border-2 border-white/10 md:block -z-50"
+          className="absolute top-1/4 left-1/2 -z-50 hidden h-16 w-16 border-2 border-white/10 sm:block md:block"
           style={{ animation: "float 5s ease-in-out infinite" }}
         />
 
         {/* Pulsing Dots */}
         <div
-          className="absolute top-1/3 right-1/4 h-2 w-2 rounded-full bg-white -z-50"
+          className="absolute top-1/3 right-1/4 -z-50 hidden h-2 w-2 rounded-full bg-white sm:block"
           style={{ animation: "pulse 2s ease-in-out infinite" }}
         />
         <div
-          className="absolute bottom-1/3 left-1/2 h-2 w-2 rounded-full bg-white -z-50"
+          className="absolute bottom-1/3 left-1/2 -z-50 hidden h-2 w-2 rounded-full bg-white sm:block"
           style={{ animation: "pulse 2s ease-in-out infinite 0.5s" }}
         />
         <div
-          className="absolute top-21 left-[10%] h-2 w-2 rounded-full bg-white -z-50"
+          className="absolute top-21 left-[10%] -z-50 hidden h-2 w-2 rounded-full bg-white sm:block"
           style={{ animation: "pulse 2s ease-in-out infinite 1s" }}
         />
       </main>
